@@ -1,8 +1,28 @@
 aid: alix
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alix.png
 name: Alix
-description: 'Alix is a company surfaced as a portfolio company of initialized-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Alix is an estate settlement service that pairs technology with human
+  experts — Settlement Specialists, fiduciaries, CPAs, and probate attorneys — to
+  execute the 150+ administrative, legal, financial, and tax tasks required to settle
+  an estate after a death. It coordinates probate court filings, asset discovery (50-state
+  unclaimed-property and federal life-insurance searches, hidden 401(k)s and bank
+  accounts), estate bank-account and IRS EIN setup, creditor and debt negotiation,
+  final personal (1040) and estate (1041) tax filings, property liquidation and estate
+  sales, and the legally compliant distribution of funds to beneficiaries — while
+  keeping the executor informed through a dedicated app. Alix charges a flat 1% of
+  gross estate value (minimum $9,000, $2,500 initial deposit). Backed by Initialized
+  Capital.'
 url: https://raw.githubusercontent.com/api-evangelist/alix/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -16,6 +36,12 @@ modified: '2026-07-17'
 tags:
 - Company
 - Fintech
+- Estate Settlement
+- Legal Tech
+- Probate
+- Estate Administration
+- Wealth
+- Consumer Finance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/alix-domain-security.yml
+- type: LLMsTxt
+  url: llms/alix-llms.txt
 - type: Website
   url: https://meetalix.com/
+- type: About
+  url: https://www.meetalix.com/about-us
+- type: Blog
+  url: https://www.meetalix.com/resources
+- type: Login
+  url: https://app.meetalix.com/login
+- type: SignUp
+  url: https://go.meetalix.com/form
+- type: PrivacyPolicy
+  url: https://www.meetalix.com/privacy-policy
+- type: TermsOfService
+  url: https://www.meetalix.com/terms-of-service
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
